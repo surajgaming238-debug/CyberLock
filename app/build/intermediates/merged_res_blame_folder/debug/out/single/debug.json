@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/codespace/.gradle/daemon/8.5/com.example.cyberlock.app-merged_res-4:/xml_accessibility_service_config.xml.flat",
+        "source": "/home/codespace/.gradle/daemon/8.5/com.example.cyberlock.app-main-6:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "/home/codespace/.gradle/daemon/8.5/com.example.cyberlock.app-merged_res-4:/xml_device_admin.xml.flat",
+        "source": "/home/codespace/.gradle/daemon/8.5/com.example.cyberlock.app-main-6:/xml/device_admin.xml"
+    },
+    {
+        "merged": "com.example.cyberlock.app-merged_res-4:/xml_accessibility_service_config.xml.flat",
+        "source": "com.example.cyberlock.app-main-6:/xml/accessibility_service_config.xml"
+    }
+]

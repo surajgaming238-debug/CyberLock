@@ -1,0 +1,2 @@
+com.example.cyberlock:xml/device_admin = 0x7f010001
+com.example.cyberlock:xml/accessibility_service_config = 0x7f010000

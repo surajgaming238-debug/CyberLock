@@ -1,0 +1,7 @@
+com.example.cyberlock.app-pngs-0 /workspaces/CyberLock/app/build/generated/res/pngs/debug
+com.example.cyberlock.app-resValues-1 /workspaces/CyberLock/app/build/generated/res/resValues/debug
+com.example.cyberlock.app-packageDebugResources-2 /workspaces/CyberLock/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.cyberlock.app-packageDebugResources-3 /workspaces/CyberLock/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.cyberlock.app-merged_res-4 /workspaces/CyberLock/app/build/intermediates/merged_res/debug
+com.example.cyberlock.app-debug-5 /workspaces/CyberLock/app/src/debug/res
+com.example.cyberlock.app-main-6 /workspaces/CyberLock/app/src/main/res

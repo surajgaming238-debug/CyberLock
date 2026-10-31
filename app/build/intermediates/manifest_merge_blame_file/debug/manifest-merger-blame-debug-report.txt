@@ -1,0 +1,102 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.cyberlock"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+11-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:2:5-81
+11-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:2:22-78
+12
+13    <application
+13-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:4:5-46:19
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:label="Cyber Lock"
+16-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:5:9-35
+17        android:theme="@android:style/Theme.Material.NoActionBar" >
+17-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:6:9-66
+18        <activity
+18-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:8:9-15:20
+19            android:name="com.example.cyberlock.MainActivity"
+19-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:9:13-41
+20            android:exported="true" >
+20-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:10:13-36
+21            <intent-filter>
+21-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:11:13-14:29
+22                <action android:name="android.intent.action.MAIN" />
+22-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:12:17-68
+22-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:12:25-66
+23
+24                <category android:name="android.intent.category.LAUNCHER" />
+24-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:13:17-76
+24-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:13:27-74
+25            </intent-filter>
+26        </activity>
+27
+28        <receiver
+28-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:17:9-21:20
+29            android:name="com.example.cyberlock.BootReceiver"
+29-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:17:19-47
+30            android:exported="false" >
+30-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:17:48-72
+31            <intent-filter>
+31-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:18:13-20:29
+32                <action android:name="android.intent.action.BOOT_COMPLETED" />
+32-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:19:17-78
+32-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:19:25-76
+33            </intent-filter>
+34        </receiver>
+35
+36        <service
+36-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:23:9-33:19
+37            android:name="com.example.cyberlock.KioskAccessibilityService"
+37-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:24:13-54
+38            android:exported="true"
+38-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:26:13-36
+39            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+39-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:25:13-79
+40            <intent-filter>
+40-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:27:13-29:29
+41                <action android:name="android.accessibilityservice.AccessibilityService" />
+41-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:28:17-92
+41-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:28:25-89
+42            </intent-filter>
+43
+44            <meta-data
+44-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:30:13-32:72
+45                android:name="android.accessibilityservice"
+45-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:31:17-60
+46                android:resource="@xml/accessibility_service_config" />
+46-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:32:17-69
+47        </service>
+48
+49        <receiver
+49-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:35:9-45:20
+50            android:name="com.example.cyberlock.KioskDeviceAdminReceiver"
+50-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:36:13-53
+51            android:exported="true"
+51-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:38:13-36
+52            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+52-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:37:13-70
+53            <meta-data
+53-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:39:13-41:56
+54                android:name="android.app.device_admin"
+54-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:40:17-56
+55                android:resource="@xml/device_admin" />
+55-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:41:17-53
+56
+57            <intent-filter>
+57-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:42:13-44:29
+58                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+58-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:43:17-82
+58-->/workspaces/CyberLock/app/src/main/AndroidManifest.xml:43:25-79
+59            </intent-filter>
+60        </receiver>
+61    </application>
+62
+63</manifest>
